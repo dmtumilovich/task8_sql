@@ -67,13 +67,30 @@ values
 
 insert into rent_a_car.car_review (id_car, id_user, review, time)
 values
+('2', '13', 'Very good', '2018-06-24 16:32:17'),
 ('10', '7', 'Too expensive', '2018-06-24 23:31:43'),
+('14', '13', 'New car, new adventures', '2018-06-26 12:00:57'),
 ('1', '6', 'Good car', '2018-06-26 15:38:21'),
+('1', '6', 'And good price!', '2018-06-26 15:39:02'),
 ('1', '1', 'I agree with the previous speaker. She also took it somehow. Good car.', '2018-06-26 17:24:35'),
+('18', '6', 'Lets try it', '2018-06-26 19:12:34'),
+('2', '1', 'Nice price for this car!', '2018-06-27 06:11:12'),
 ('3', '8', 'I want to take it. Can someone tell me in what state it is?', '2018-06-27 11:12:34'),
 ('4', '5', 'Took a ride for two days. Economy class is enough for me', '2018-06-28 13:51:17'),
 ('3', '9', 'I also think of taking this typewriter. But while in the reviews somehow deaf ...', '2018-06-29 07:53:21'),
-('9', '4', 'Classic..', '2018-06-29 15:24:36');
+('9', '4', 'Classic..', '2018-06-29 15:24:36'),
+('3', '12', 'I took this car a couple of days ago. A good choice, but too expensive', '2018-06-30 22:33:44'),
+('3', '8', 'Thanks!', '2018-07-01 15:33:36');
+
+insert into rent_a_car.accident_list (id_order, damages, date, repair_cost)
+values
+('1', 'scratch on the wing', '2018-06-18', '10'),
+('9', 'right headlight', '2018-06-26', '30'),
+('12', 'front bumper', '2018-06-27', '50');
+
+
+
+
 
 
 

@@ -101,7 +101,7 @@ COMMENT = 'Список заказов, содержащий также дату
 -- Table `rent_a_car`.`accident_list`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `rent_a_car`.`accident_list` (
-  `id_accident` INT NOT NULL,
+  `id_accident` INT NOT NULL AUTO_INCREMENT,
   `id_order` INT NOT NULL,
   `date` DATE NOT NULL COMMENT 'Дата ДТП',
   `damages` VARCHAR(50) NULL COMMENT 'Нанесенные повреждения',
@@ -125,6 +125,7 @@ CREATE TABLE IF NOT EXISTS `rent_a_car`.`car_review` (
   `id_car` INT NOT NULL,
   `id_user` INT NOT NULL,
   `review` LONGTEXT NOT NULL COMMENT 'Текст отзыва',
+  `time` DATETIME NOT NULL,
   PRIMARY KEY (`id_review`),
   INDEX `id_car_idx` (`id_car` ASC),
   INDEX `id_user_idx` (`id_user` ASC),
